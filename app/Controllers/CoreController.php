@@ -5,7 +5,7 @@ namespace Pokedex\Controllers;
 class CoreController 
 {
 
-    protected function affichage($viewPage, $viewData = []) {
+    public function affichage($viewPage, $viewData = []) {
 
         global $router;
         

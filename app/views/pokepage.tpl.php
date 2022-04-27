@@ -1,4 +1,7 @@
-
+<link rel="stylesheet" href="css/style.css">
+    <base href="<?$absoluteURL?>">
+    
+</header>
 
         <div class="page_title">
             <h2>Détails de Herbizarre</h2>

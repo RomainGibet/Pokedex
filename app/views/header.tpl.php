@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <base href="<? $absoluteURL ?>">
+    <base href="<?$absoluteURL?>">
     <title>Document</title>
 </head>
 
