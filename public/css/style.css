@@ -1,0 +1,97 @@
+:root {
+
+    --bg-color: #c14040;
+    --card-color: #982c2c;
+    --text-color: #efe3e3;
+}
+
+/* ----------FONT------------------------- */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+
+body {
+
+    font-family: 'Bree Serif', serif;
+    background-color: var(--bg-color);
+
+
+}
+
+
+/* HEADER */
+
+
+.pokedex {
+   
+    
+    color: var(--bg-color);
+    font-size: 1.6em;
+}
+
+.header {
+    display:flex;
+    box-sizing: border-box;
+    padding : 1em;
+    justify-content: space-between;
+    border-radius: 25px;
+    margin: auto;
+    width: 90%;
+    height: 10vh;
+    background-color: var(--text-color);
+    
+
+}
+.flex-nav {
+
+
+    display: flex;
+    color: var(--bg-color);
+    
+}
+
+.li-nav {
+
+    margin-left: 1em;
+    
+}
+
+.header li {
+
+    list-style: none;
+    /* margin: .3em; */
+    font-size: 1.6em;
+}
+
+
+/* HOME */
+
+
+.card_pokemon {
+
+    background-color: #982c2c;
+    width: 26%;
+    border-radius:20px;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 1em;
+
+}
+
+.poke_list {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    
+}
+
+.card_pokemon > p {
+
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.5em;
+    box-sizing: border-box;
+    padding-bottom: .5em;
+}
