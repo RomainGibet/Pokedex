@@ -3,6 +3,7 @@
     --bg-color: #c14040;
     --card-color: #982c2c;
     --text-color: #efe3e3;
+   
 }
 
 /* ----------FONT------------------------- */
@@ -15,6 +16,7 @@ body {
 
     font-family: 'Bree Serif', serif;
     background-color: var(--bg-color);
+    list-style: none;
 
 
 }
@@ -54,14 +56,16 @@ body {
 .li-nav {
 
     margin-left: 1em;
+    list-style: none;
     
 }
 
 .header li {
 
-    list-style: none;
+    
     /* margin: .3em; */
     font-size: 1.6em;
+    list-style: none;
 }
 
 
@@ -94,4 +98,76 @@ body {
     font-size: 1.5em;
     box-sizing: border-box;
     padding-bottom: .5em;
+}
+
+
+/* POKE PAGE */
+
+
+.container {
+
+margin: auto;
+width: 90%;
+text-align: center;
+
+}
+
+#titre_page {
+
+color:var(--text-color);
+font-size: 3em;
+}
+
+.blocs_centraux {
+
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+    
+
+}
+
+.statistiques {
+
+    width:60%;
+    border-radius: 20px;
+    background-color:var(--card-color);
+    height: 50vh;
+    color: var(--text-color);
+    list-style: none;
+    text-align: left;
+}
+
+.statistiques > h3 {
+
+    font-size: 2em;
+
+
+}
+
+.points_specs {
+
+    display: flex;
+    text-align: left;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+.points_specs li {
+
+    
+    margin: 0.4em 0;
+    list-style: none;
+}
+
+
+.retour {
+    width: 90%;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.7em;
+    margin-top:4em;
 }
