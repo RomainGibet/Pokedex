@@ -14,6 +14,7 @@ class CoreController
 
         require __DIR__ . "/../views/header.tpl.php";
         require __DIR__ . "/../views/" . $viewPage . ".tpl.php";
+        require __DIR__ . "/../views/footer.tpl.php";
 
     }
 

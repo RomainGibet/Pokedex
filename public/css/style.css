@@ -3,6 +3,24 @@
     --bg-color: #c14040;
     --card-color: #982c2c;
     --text-color: #efe3e3;
+
+    --plante:#77cc55;
+    --poison:#aa5599;
+    --acier:#aaaabb;
+    --combat:#bb5544;
+    --dragon:#7766ee;
+    --eau:#3399ff;
+    --electrik:#ffbb33;
+    --feu:#ff4422;
+    --glace:#77ddff;
+    --insecte:#aabb22;
+    --normal:#bbaabb;
+    --psy:#ff5599;
+    --roche:#bbaa66;
+    --sol:#ddbb55;
+    --spectre:#6666bb;
+    --ténèbres:#665544;
+    --vol:#6699ff;
    
 }
 
@@ -17,8 +35,30 @@ body {
     font-family: 'Bree Serif', serif;
     background-color: var(--bg-color);
     list-style: none;
+    }
 
+body a:link{
 
+    text-decoration: none;
+    color: var(--text-color)
+
+}
+
+body a:visited {
+
+    color: var(--text-color)
+
+}
+
+body a:hover {
+
+    
+    color:var(--bg-color);
+}
+
+footer a:hover {
+
+    color:var(--card-color)
 }
 
 
@@ -98,6 +138,7 @@ body {
     font-size: 1.5em;
     box-sizing: border-box;
     padding-bottom: .5em;
+
 }
 
 
@@ -110,6 +151,12 @@ margin: auto;
 width: 90%;
 text-align: center;
 
+}
+
+.container img {
+
+    width:500px;
+    height: 500px;
 }
 
 #titre_page {
@@ -127,23 +174,47 @@ font-size: 3em;
 
 }
 
+.type_box {
+
+    display:flex;
+    
+
+}
+
+
+
+.type_card {
+    font-size: 1.4em;
+    margin-left:2em;
+    background-color: var(--plante);
+    border-radius: 3px;
+    padding: .4em;
+}
 .statistiques {
 
     width:60%;
     border-radius: 20px;
     background-color:var(--card-color);
-    height: 50vh;
+    height: 60vh;
     color: var(--text-color);
     list-style: none;
     text-align: left;
 }
 
-.statistiques > h3 {
+.statistiques h3 {
 
-    font-size: 2em;
+    font-size: 2.3em;
+    margin: 1.3em 0em 0em 1em;
 
 
 }
+
+.statistiques h4 {
+
+    margin-left: 1em;
+    margin-bottom:0;
+    font-size: 2rem;
+} 
 
 .points_specs {
 
@@ -164,10 +235,95 @@ font-size: 3em;
 }
 
 
+/* FOOTER */
+
 .retour {
     width: 90%;
     text-align: center;
     color: var(--text-color);
-    font-size: 1.7em;
+    font-size: 1.5em;
     margin-top:4em;
 }
+
+/* 
+CLASS COLOR */
+.Plante {
+
+    background-color:var(--plante);
+}
+
+.Poison {
+
+    background-color:var(--poison);
+}
+
+.Acier {
+
+    background-color:var(--acier);
+}
+
+.Combat {
+
+    background-color:var(--combat);
+}
+
+.Dragon {
+
+    background-color:var(--Dragon);
+}
+.Eau {
+
+    background-color:var(--eau);
+}
+.Electrik{
+
+    background-color:var(--electrik);
+}
+.Feu {
+
+    background-color:var(--feu);
+}
+.Glace {
+
+    background-color:var(--glace);
+}
+.Insecte {
+
+    background-color:var(--insecte);
+}
+
+.Normal {
+
+    background-color:var(--normal);
+}
+       
+.Psy {
+
+    background-color:var(--psy);
+}
+
+.Roche {
+
+    background-color:var(--roche);
+}
+
+.Sol{
+
+    background-color:var(--sol);
+}
+.Spectre {
+
+    background-color:var(--spectre);
+}
+.Ténèbres {
+
+    background-color:var(--ténèbres);
+}
+
+.Vol {
+
+    background-color:var(--vol);
+}
+ 
+    
+   

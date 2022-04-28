@@ -8,7 +8,8 @@ $router = new AltoRouter;
 $router -> setBasePath($_SERVER['BASE_URI']);
 
 $router -> map('GET', '/', ['controller' => 'MainController', 'method' =>'home'], 'home-page');
-$router -> map('GET', '/pokepage/[i:id]', ['controller' => 'PageController', 'method' =>'pokepage'], 'pokemon-page');
+$router -> map('GET', '/pokepage/[i:id]', ['controller' => 'PageController', 'method' =>'pokePage'], 'pokemon-page');
+$router -> map('GET', '/liste', ['controller' => 'PageController', 'method' =>'listePage'], 'liste-page');
 
 
 $match = $router -> match(); 

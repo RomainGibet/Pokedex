@@ -1,23 +1,25 @@
 <div class="container">
-    <h1 id="titre_page">Détails de Herbizarre</h1>
+    <h1 id="titre_page">Détails de <?= $poke_datas->getName() ?></h1>
 
 
     <section class="blocs_centraux">
         <div class="photo_pokemon">
-            <img src="img/2.png">
+            <img src="img/<?= $poke_datas->getNumber()?>.png">
         </div>
         <div class="statistiques">
 
-            <h3>#2 Herbizarre</h3>
+            <h3>#<?= $poke_datas->getNumber() . " " . $poke_datas->getName()?></h3>
+            <br>
 
-            <span>Type</span>
+            <span class="type_box"><?php $poke_datas->getConcat()?></span>
+            
 
             <h4>Statistiques</h4>
 
             <div class="points_specs">
 
                 <ul class="specs">
-                    <li>PV</li>
+                    <li>Hp</li>
                     <li>Attaque</li>
                     <li>Défense</li>
                     <li>Attaque Spé.</li>
@@ -26,12 +28,12 @@
                 </ul>
 
                 <ul class="specs">
-                    <li>60</li>
-                    <li>62</li>
-                    <li>63</li>
-                    <li>80</li>
-                    <li>80</li>
-                    <li>60</li>
+                    <li><?= $poke_datas->getHp() ?></li>
+                    <li><?= $poke_datas->getAttack() ?></li>
+                    <li><?= $poke_datas->getDefense() ?></li>
+                    <li><?= $poke_datas->getSpe_attack() ?></li>
+                    <li><?= $poke_datas->getSpe_defense() ?></li>
+                    <li><?= $poke_datas->getSpeed() ?></li>
                 </ul>
 
 
@@ -44,14 +46,3 @@
 </div>
 </main>
 
-<footer>
-
-<div class="retour">
-<p><a href="<?= $router->generate('home-page')?>">Revenir à la liste</a></p>
-
-</div>
-
-</footer>
-</body>
-
-</html>
