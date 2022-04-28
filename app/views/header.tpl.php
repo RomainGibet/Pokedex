@@ -25,7 +25,7 @@
             
         <ul class="flex-nav">
                 <li class="li-nav">Liste</li>
-                <li class="li-nav"><a href="<?php $router->generate("liste-page") ?>">Types</a></li>
+                <li class="li-nav"><a href="<?= $router->generate("liste-page") ?>">Types</a></li>
             </ul>
 
 </nav>

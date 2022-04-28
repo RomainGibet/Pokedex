@@ -37,12 +37,24 @@ body {
     list-style: none;
     }
 
-body a:link{
+body a:link {
 
     text-decoration: none;
     color: var(--text-color)
 
 }
+.flex-nav a:visited {
+
+color: var(--bg-color);
+
+}
+
+.flex-nav a:hover {
+
+    color:var(--card-color);
+}
+
+
 
 body a:visited {
 
@@ -95,7 +107,8 @@ footer a:hover {
 
 .li-nav {
 
-    margin-left: 1em;
+    
+    margin-right:1em;
     list-style: none;
     
 }
@@ -221,10 +234,7 @@ font-size: 3em;
     display: flex;
     text-align: left;
     font-size: 1.5em;
-    box-sizing: border-box;
-    
-    
-    
+    box-sizing: border-box;    
 }
 
 .points_specs li {
@@ -233,6 +243,46 @@ font-size: 3em;
     margin: 0.4em 0;
     list-style: none;
 }
+
+/* PAGE ---- LISTE */
+
+.page-liste-titre {
+
+    width:90%;
+    text-align: left;
+    margin: auto;
+    margin-top: 2em;
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+.type_nom {
+
+    color: var(--text-color);
+    border-radius: 3px;
+    width: 24%;
+    height: 7vh;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1em;
+    margin-right: .7em;
+    margin-bottom: .7em;
+   
+    
+
+}
+
+.type_category {
+
+    display:flex;
+    flex-wrap:wrap;
+    width: 90%;
+    margin: auto;
+    margin-top: 3em;
+    font-size: 1.25rem;
+}
+
+
 
 
 /* FOOTER */
@@ -269,13 +319,13 @@ CLASS COLOR */
 
 .Dragon {
 
-    background-color:var(--Dragon);
+    background-color:var(--dragon);
 }
 .Eau {
 
     background-color:var(--eau);
 }
-.Electrik{
+.Électrik{
 
     background-color:var(--electrik);
 }
